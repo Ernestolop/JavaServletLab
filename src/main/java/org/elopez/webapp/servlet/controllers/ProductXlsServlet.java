@@ -33,6 +33,7 @@ public class ProductXlsServlet extends HttpServlet {
             if (servletPath.equals("/product.html")) {
                 out.println("<h1>Products</h1>");
                 out.println("<a href=\"" + request.getContextPath() + "/product.xls\">Export to XLS</a>");
+                out.println("<a href=\"" + request.getContextPath() + "/product.json\">ver en formato JSON</a>");
             }
             out.println("<table border='1'>");
             out.println("<tr>");
